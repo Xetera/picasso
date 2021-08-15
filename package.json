@@ -1,0 +1,31 @@
+{
+  "name": "picasso-fingerprint",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/picasso.umd.js",
+  "module": "./dist/picasso.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/picasso.es.js",
+      "require": "./dist/picasso.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.172",
+    "prettier-eslint": "^13.0.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.4",
+    "vite-plugin-dts": "^0.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "sideEffects": false
+}
